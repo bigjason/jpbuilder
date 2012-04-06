@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-Install in your gem file and then just create templates with the extension `.jpbuilder`.  The template will use the callback as specified in the "callback" url parameter. If none is provided then the regular JSON format will be returned.
+Install in your gem file and then just create templates with the extension `.jpbuilder` and use the normal Jbuilder DSL.  The template will use the callback as specified in the "callback" url parameter. If none is provided then the regular JSON format will be returned.
 
 ## Contributing
 
