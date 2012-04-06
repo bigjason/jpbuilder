@@ -20,6 +20,11 @@ Or install it yourself as:
 
 Install in your gem file and then just create templates with the extension `.jpbuilder` and use the normal Jbuilder DSL.  The template will use the callback as specified in the "callback" url parameter. If none is provided then the regular JSON format will be returned.
 
+## TODO
+
+1. Find a decent way to test.
+2. Add settings to enable forced JSONP and a default callback name.
+
 ## Contributing
 
 1. Fork it
