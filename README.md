@@ -1,6 +1,6 @@
 # Jpbuilder
 
-TODO: Write a gem description
+A small extension to the excellent Jbuilder library that outputs JSONP using a specified callback.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Install in your gem file and then just create templates with the extension `.jpbuilder`.  The template will use name the callback whatever is specified in the "callback" url parameter. 
 
 ## Contributing
 
