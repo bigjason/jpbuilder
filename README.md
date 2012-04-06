@@ -1,6 +1,6 @@
 # jpbuilder
 
-A small extension to the excellent Jbuilder library that outputs JSONP using a specified callback.
+A small extension to the excellent [jbuilder](https://github.com/rails/jbuilder) library that outputs JSONP using a specified callback.
 
 ## Installation
 
