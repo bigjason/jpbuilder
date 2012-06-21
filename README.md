@@ -1,6 +1,7 @@
 # jpbuilder
 
-A small extension to the excellent [jbuilder](https://github.com/rails/jbuilder) library that outputs JSONP using a specified callback.
+A small extension to the excellent [jbuilder](https://github.com/rails/jbuilder)
+library that outputs JSONP using a specified callback.
 
 ## Installation
 
@@ -18,12 +19,35 @@ Or install it yourself as:
 
 ## Usage
 
-Install in your gem file and then just create templates with the extension `.jpbuilder` and use the normal Jbuilder DSL.  The template will use the callback as specified in the "callback" url parameter. If none is provided then the regular JSON format will be returned.
+Install in your gem file and then just create templates with the extension
+`.jpbuilder` and use the normal Jbuilder DSL.  The template will use the
+callback  as specified in the "callback" url parameter. If none is provided then
+the regular JSON format will be returned.
+
+### Setting a default callback
+
+You can set a global callback to be used  in the absence of a callback listed in
+the `params` hash, by setting the `JPbuilderHandler.default_callback` variable
+in an initializer:
+
+``` ruby
+# config/initilizers/jpbuilder.rb
+JPbuilderHandler.default_callback = "myJsCallback"
+```
+
+To disable the auto callback simply set `JPbuilderHandler.default_callback` to
+`null` or `""`.
+
+``` ruby
+# config/initilizers/jpbuilder.rb
+JPbuilderHandler.default_callback = nil
+```
+
+**Note**: `nil` is the default value.
 
 ## TODO
 
-1. Find a decent way to test.
-2. Add settings to enable forced JSONP and a default callback name.
+* Find a decent way to test.
 
 ## Contributing
 
