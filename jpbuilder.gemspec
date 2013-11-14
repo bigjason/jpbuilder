@@ -9,6 +9,7 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split("\n")
   gem.name          = "jpbuilder"
   gem.require_paths = ["lib"]
+  gem.license       = "MIT"
 
   gem.add_dependency "jbuilder"
 end
