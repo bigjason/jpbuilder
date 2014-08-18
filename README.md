@@ -31,7 +31,7 @@ the `params` hash, by setting the `JPbuilderHandler.default_callback` variable
 in an initializer:
 
 ``` ruby
-# config/initilizers/jpbuilder.rb
+# config/initializers/jpbuilder.rb
 JPbuilderHandler.default_callback = "myJsCallback"
 ```
 
@@ -39,7 +39,7 @@ To disable the auto callback simply set `JPbuilderHandler.default_callback` to
 `null` or `""`.
 
 ``` ruby
-# config/initilizers/jpbuilder.rb
+# config/initializers/jpbuilder.rb
 JPbuilderHandler.default_callback = nil
 ```
 
