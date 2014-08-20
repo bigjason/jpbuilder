@@ -16,7 +16,7 @@ class JPbuilderHandler
         result = result.each_char.to_a.map { |chr| chr.ord > 1000 ? "\\\\u\#{"%4.4x" % chr.ord}" : chr }.join
         callback = params[:callback] || JPbuilderHandler.default_callback
         if callback.present?
-          "\#{callback}(\#{result});"
+          "/**/\#{callback}(\#{result});"
         else
           result
         end
