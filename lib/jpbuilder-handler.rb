@@ -2,7 +2,7 @@ require "jbuilder"
 
 class JPbuilderHandler
   cattr_accessor :default_format, :default_callback
-  self.default_format = Mime::JSON
+  self.default_format = Mime[:json]
   self.default_callback = nil
 
   def self.call(template)
