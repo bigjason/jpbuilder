@@ -1,5 +1,7 @@
 # jpbuilder
 
+[![Gem Version](https://badge.fury.io/rb/jpbuilder.svg)](https://badge.fury.io/rb/jpbuilder)
+
 A small extension to the excellent [jbuilder](https://github.com/rails/jbuilder)
 library that outputs JSONP using a specified callback.
 
